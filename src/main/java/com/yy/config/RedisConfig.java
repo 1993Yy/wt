@@ -18,6 +18,8 @@ import org.redisson.config.TransportMode;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.IOException;
+
 /**
  * @package: com.yy.config
  * @className: RedisConfig
@@ -54,9 +56,17 @@ public class RedisConfig {
         public Encoder getValueEncoder() {
             return in ->{
                 ByteBuf out = ByteBufAllocator.DEFAULT.buffer();
-                ByteBufOutputStream os = new ByteBufOutputStream(out);
-                JSON.writeJSONString(os, in,SerializerFeature.WriteClassName);
-                return os.buffer();
+                try {
+                    ByteBufOutputStream os = new ByteBufOutputStream(out);
+                    JSON.writeJSONString(os, in,SerializerFeature.WriteClassName);
+                    return os.buffer();
+                } catch (IOException e) {
+                    out.release();
+                    throw e;
+                } catch (Exception e) {
+                    out.release();
+                    throw new IOException(e);
+                }
             };
         }
     }
