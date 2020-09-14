@@ -11,6 +11,32 @@
     <script type="text/javascript" src="/js/qs.js"></script>
 </head>
 <body>
-
+    <div id="head">
+        <div>
+            <i-Menu>
+                <submenu>
+                    <template slot="title">
+                        <Icon type="ios-paper"></Icon>
+                        内容管理
+                    </template>
+                    <Menu-Item>文章管理</Menu-Item>
+                    <Menu-Item>评论管理</Menu-Item>
+                    <Menu-Item>举报管理</Menu-Item>
+                </submenu>
+            </i-Menu>
+        </div>
+    </div>
 </body>
+<script>
+    var head = new Vue({
+        el: '#head',
+        data: {
+
+        },
+        methods: {},
+        created() {
+
+        }
+    })
+</script>
 </html>
