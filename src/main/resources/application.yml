@@ -1,3 +1,37 @@
+server:
+  port: 9999
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  compression:
+    enabled: true
+
 spring:
   thymeleaf:
     cache: false
+  application:
+    name: @project.artifactId@
+  datasource:
+    url: jdbc:mysql://localhost:3306/yy?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: yangyao
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+#    initialization-mode: ALWAYS
+#    platform: mysql
+#    schema: classpath:sql/schema-mysql.sql
+#    data: classpath:sql/data-mysql.sql
+    hikari:
+      maximum-pool-size: 25
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    call-setters-on-nulls: true
+  global-config:
+    db-config:
+      id-type: auto
