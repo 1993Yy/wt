@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/iview.css">
     <link rel="stylesheet" type="text/css" href="/css/element.css">
+    <link rel="stylesheet" type="text/css" href="/css/iconfont.css">
     <script type="text/javascript" src="/js/vue.js"></script>
     <script type="text/javascript" src="/js/iview.js"></script>
     <script type="text/javascript" src="/js/element.js"></script>
@@ -12,19 +13,28 @@
 </head>
 <body>
 <div id="head">
+
     <div>
         <i-Menu mode="horizontal" theme="dark">
-            <Menu-Item>
-                <template slot="title">
-                    <Icon type="ios-paper"></Icon>
-                    首页
-                </template>
+            <Menu-Item style="padding-left: 8%">
+                <span class="iconfont icon-home"></span>
+                首页
             </Menu-Item>
-            <Menu-Item>文章管理</Menu-Item>
-            <Menu-Item>评论管理</Menu-Item>
-            <Menu-Item>举报管理</Menu-Item>
+            <Menu-Item>
+                <span class="iconfont icon-paihang1"></span>
+                排行
+            </Menu-Item>
+            <Menu-Item>
+                <span class="iconfont icon-rengongzhineng-"></span>
+                AI工具
+            </Menu-Item>
+            <Menu-Item>
+                <span class="iconfont icon-rengongzhineng-"></span>
+                AI工具
+            </Menu-Item>
         </i-Menu>
     </div>
+
 </div>
 </body>
 <script>
@@ -41,9 +51,13 @@
     .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu:hover {
         color: #faa712;
     }
-    .ivu-menu-item{
+    .ivu-menu-horizontal .ivu-menu-item, .ivu-menu-horizontal .ivu-menu-submenu{
+        padding-left: 0px;
+    }
+    .ivu-menu-item {
         font-size: 16px;
     }
+
     .ivu-menu-horizontal {
         height: 50px;
         line-height: 50px;
