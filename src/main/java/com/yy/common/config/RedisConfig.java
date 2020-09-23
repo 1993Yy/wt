@@ -1,4 +1,4 @@
-package com.yy.config;
+package com.yy.common.config;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;
@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 import java.io.IOException;
 
 /**
- * @package: com.yy.config
+ * @package: com.yy.common.config
  * @className: RedisConfig
  * @author: Created By Yy
  * @date: 2020-09-14 22:05
