@@ -8,14 +8,14 @@ package com.yy.common.consts;
  */
 public class AiUrlConst {
 
-    public static final String orc_idCard="https://api.ai.qq.com/fcgi-bin/ocr/ocr_idcardocr";
-    public static final String orc_driverLicense="https://api.ai.qq.com/fcgi-bin/ocr/ocr_driverlicenseocr";
-    public static final String orc_general="https://api.ai.qq.com/fcgi-bin/ocr/ocr_generalocr";
-    public static final String orc_bizLicense="https://api.ai.qq.com/fcgi-bin/ocr/ocr_bizlicenseocr";
-    public static final String orc_creditCard="https://api.ai.qq.com/fcgi-bin/ocr/ocr_creditcardocr";
-    public static final String orc_handWriting="https://api.ai.qq.com/fcgi-bin/ocr/ocr_handwritingocr";
-    public static final String orc_plate="https://api.ai.qq.com/fcgi-bin/ocr/ocr_plateocr";
-    public static final String orc_bc="https://api.ai.qq.com/fcgi-bin/ocr/ocr_bcocr";
+    public static final String ocr_idCard="https://api.ai.qq.com/fcgi-bin/ocr/ocr_idcardocr";
+    public static final String ocr_driverLicense="https://api.ai.qq.com/fcgi-bin/ocr/ocr_driverlicenseocr";
+    public static final String ocr_general="https://api.ai.qq.com/fcgi-bin/ocr/ocr_generalocr";
+    public static final String ocr_bizLicense="https://api.ai.qq.com/fcgi-bin/ocr/ocr_bizlicenseocr";
+    public static final String ocr_creditCard="https://api.ai.qq.com/fcgi-bin/ocr/ocr_creditcardocr";
+    public static final String ocr_handWriting="https://api.ai.qq.com/fcgi-bin/ocr/ocr_handwritingocr";
+    public static final String ocr_plate="https://api.ai.qq.com/fcgi-bin/ocr/ocr_plateocr";
+    public static final String ocr_bc="https://api.ai.qq.com/fcgi-bin/ocr/ocr_bcocr";
 
     public static final String face_detect="https://api.ai.qq.com/fcgi-bin/face/face_detectface";
     public static final String face_detectMulti="https://api.ai.qq.com/fcgi-bin/face/face_detectmultiface";
