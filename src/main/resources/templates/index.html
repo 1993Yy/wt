@@ -11,56 +11,122 @@
     <script type="text/javascript" src="/js/axios.js"></script>
     <script type="text/javascript" src="/js/qs.js"></script>
 </head>
-<body>
-<div id="head">
+<body style="background-color: #f2f2f2">
+<div th:insert="head"></div>
+<br><span class="iconfont icon-icon"></span>
+<div id="ai">
 
-    <div>
-        <i-Menu mode="horizontal" theme="dark">
-            <Menu-Item style="padding-left: 8%">
-                <span class="iconfont icon-home"></span>
-                首页
-            </Menu-Item>
-            <Menu-Item>
-                <span class="iconfont icon-paihang1"></span>
-                排行
-            </Menu-Item>
-            <Menu-Item>
-                <span class="iconfont icon-rengongzhineng-"></span>
-                AI工具
-            </Menu-Item>
-            <Menu-Item>
-                <span class="iconfont icon-rengongzhineng-"></span>
-                AI工具
-            </Menu-Item>
+    <div class="ai_1">
+        <i-Menu width="200px">
+            <Submenu name="1">
+                <template slot="title">
+                    OCR
+                </template>
+                <Menu-Item>
+                    <span class="iconfont icon-user-id"></span>
+                    身份证OCR
+                </Menu-Item>
+                <Menu-Item>行/驾驶证OCR</Menu-Item>
+                <Menu-Item>通用OCR</Menu-Item>
+                <Menu-Item>营业执照OCR</Menu-Item>
+                <Menu-Item>银行卡OCR</Menu-Item>
+                <Menu-Item>手写体OCR</Menu-Item>
+                <Menu-Item>车牌OCR</Menu-Item>
+                <Menu-Item>名片OCR</Menu-Item>
+            </Submenu>
+            <Submenu name="2">
+                <template slot="title">
+                    人脸与人体识别
+                </template>
+                <Menu-Item>人脸检测与分析</Menu-Item>
+                <Menu-Item>多人脸检测</Menu-Item>
+                <Menu-Item>跨年龄识别</Menu-Item>
+                <Menu-Item>五官定位</Menu-Item>
+                <Menu-Item>人脸对比</Menu-Item>
+                <Menu-Item>人脸验证</Menu-Item>
+            </Submenu>
+            <Submenu name="3">
+                <template slot="title">
+                    图片特效
+                </template>
+                <MenuGroup>
+                    <Menu-Item>滤镜</Menu-Item>
+                    <Menu-Item>人脸美妆</Menu-Item>
+                    <Menu-Item>人脸变妆</Menu-Item>
+                    <Menu-Item>大头贴</Menu-Item>
+                    <Menu-Item>颜龄检测</Menu-Item>
+                </MenuGroup>
+            </Submenu>
+            <Submenu name="4">
+                <template slot="title">
+                    图片识别
+                </template>
+                <MenuGroup>
+                    <Menu-Item>多标签识别</Menu-Item>
+                    <Menu-Item>看图说话</Menu-Item>
+                    <Menu-Item>模糊图片检测</Menu-Item>
+                    <Menu-Item>美食图片识别</Menu-Item>
+                </MenuGroup>
+            </Submenu>
+            <Submenu name="5">
+                <template slot="title">
+                    敏感信息甄别
+                </template>
+                <MenuGroup>
+                    <Menu-Item>暴恐识别</Menu-Item>
+                    <Menu-Item>图片鉴黄</Menu-Item>
+                    <Menu-Item>音频鉴黄</Menu-Item>
+                </MenuGroup>
+            </Submenu>
+            <Submenu name="6">
+                <template slot="title">
+                    智能闲聊
+                </template>
+                <MenuGroup>
+                    <Menu-Item>智能闲聊</Menu-Item>
+                </MenuGroup>
+            </Submenu>
+            <Submenu name="7">
+                <template slot="title">
+                    智能闲聊
+                </template>
+                <MenuGroup>
+                    <Menu-Item>智能闲聊</Menu-Item>
+                </MenuGroup>
+            </Submenu>
+            <Submenu name="8">
+                <template slot="title">
+                    机器翻译
+                </template>
+                <MenuGroup>
+                    <Menu-Item>文本翻译</Menu-Item>
+                    <Menu-Item>图片翻译</Menu-Item>
+                    <Menu-Item>语种识别</Menu-Item>
+                </MenuGroup>
+            </Submenu>
         </i-Menu>
     </div>
 
+    <div>
+        <span class="iconfont icon-user-id"></span>
+    </div>
 </div>
 </body>
 <script>
-    var head = new Vue({
-        el: '#head',
-        data: {},
-        methods: {},
-        created() {
-
-        }
+    var ai=new Vue({
+        el:'#ai',
+        data:{},
+        methods:{},
+        created(){}
     })
 </script>
 <style>
-    .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu:hover {
-        color: #faa712;
+    .ai_1 .ivu-menu-item{
+        font-size: 14px;
+        padding-left: 24px !important;
     }
-    .ivu-menu-horizontal .ivu-menu-item, .ivu-menu-horizontal .ivu-menu-submenu{
-        padding-left: 0px;
-    }
-    .ivu-menu-item {
-        font-size: 16px;
-    }
-
-    .ivu-menu-horizontal {
-        height: 50px;
-        line-height: 50px;
+    #ai{
+        padding: 0 8%;
     }
 </style>
 </html>
