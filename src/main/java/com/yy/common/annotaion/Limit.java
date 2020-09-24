@@ -26,6 +26,6 @@ public @interface Limit {
     
     int count() default 10;
     
-    boolean isForbidUser() default true;
+    boolean isForbidIp() default true;
     
 }

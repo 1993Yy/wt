@@ -1,22 +1,16 @@
 package com.yy.common.util;
 
-import cn.hutool.core.net.Ipv4Util;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.core.util.IdUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.core.util.URLUtil;
 import cn.hutool.crypto.SecureUtil;
-import cn.hutool.crypto.digest.MD5;
-import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpUtil;
-import cn.xsshome.taip.nlp.TAipNlp;
-import jodd.io.NetUtil;
 
-import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
 import java.net.URLEncoder;
 import java.time.Instant;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.TreeMap;
 
 /**
  * @package: com.yy.common.util
