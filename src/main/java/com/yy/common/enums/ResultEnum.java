@@ -9,7 +9,7 @@ package com.yy.common.enums;
 public enum ResultEnum {
 
     SUCCESS(2000,"成功"),
-    FAIL(5000,"系统错误"),
+    ERR(5000,"系统错误"),
     PARAMS_ERR(4000,"参数错误"),
     OTHER_ERR(6000,"其他错误");
 
